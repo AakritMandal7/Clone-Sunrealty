@@ -1,0 +1,171 @@
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(2px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+
+.modal-container {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 24px 32px;
+  max-width: 480px;
+  width: 90%;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+  font-family: 'Segoe UI', sans-serif;
+  position: relative;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: #555;
+  cursor: pointer;
+}
+.close-btn:hover {
+  color: #d4af37;
+}
+
+
+.logo {
+  width: 120px;
+  margin: 0 auto 10px;
+  display: block;
+}
+.presented {
+  text-align: center;
+  font-size: 13px;
+  color: #777;
+}
+h2 {
+  text-align: center;
+  color: #b58e2f;
+  font-size: 22px;
+  margin: 16px 0;
+  font-weight: 600;
+}
+
+.enquiry-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.enquiry-form input {
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border-color 0.2s ease;
+}
+.enquiry-form input:focus {
+  border-color: #d4af37;
+  outline: none;
+}
+
+
+.phone-input {
+  display: flex;
+}
+.phone-input span {
+  background-color: #f0f0f0;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-right: none;
+  border-radius: 8px 0 0 8px;
+  font-size: 14px;
+}
+.phone-input input {
+  flex: 1;
+  border: 1px solid #ccc;
+  border-left: none;
+  border-radius: 0 8px 8px 0;
+  padding: 10px 12px;
+  font-size: 14px;
+}
+
+
+button[type="submit"],
+.btn-info {
+  padding: 10px 14px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  transition: background 0.2s ease;
+}
+button[type="submit"] {
+  background-color: #d4af37;
+  color: #fff;
+}
+button[type="submit"]:hover {
+  background-color: #b58e2f;
+}
+.btn-info {
+  background-color: #333;
+  color: #fff;
+}
+.btn-info:hover {
+  background-color: #111;
+}
+
+.info-links {
+  text-align: center;
+  margin-top: 18px;
+  font-size: 13px;
+  color: #333;
+}
+.info-links span {
+  display: block;
+  margin-bottom: 5px;
+}
+
+
+.left-panel {
+  background-color: #f9f6ef;
+  padding: 16px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.left-panel h3 {
+  font-size: 15px;
+  color: #b58e2f;
+  margin-bottom: 8px;
+  text-align: center;
+}
+.promise-item {
+  font-size: 13px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+
+@media (max-width: 480px) {
+  .modal-container {
+    padding: 20px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+}

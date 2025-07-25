@@ -1,0 +1,94 @@
+.area-pricing {
+  text-align: center;
+  padding: 60px 40px;
+  background-color: #eef0fc;
+}
+
+.area-pricing h2 {
+  font-size: 36px;
+  color: #9d7826;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.area-pricing hr {
+  width: 60px;
+  border: 2px solid #9d7826;
+  margin: 0 auto 40px auto;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  padding: 40px 30px;
+  width: 300px;
+}
+
+.card h3 {
+  font-size: 24px;
+  color: #1e2a6a;
+  margin-bottom: 10px;
+}
+
+.card .size {
+  font-size: 16px;
+  color: #1e2a6a;
+  margin-bottom: 30px;
+}
+
+.card .price {
+  font-size: 28px;
+  font-weight: 700;
+  color: #9d7826;
+  margin-bottom: 30px;
+}
+
+.pricing-btn {
+  background-color: #9d7826;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 16px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 2px 4px 8px rgba(0,0,0,0.2);
+  width: 100%;
+}
+
+
+@media screen and (max-width: 768px) {
+  .area-pricing {
+    padding: 40px 20px;
+  }
+
+  .area-pricing h2 {
+    font-size: 28px;
+  }
+
+  .card {
+    width: 100%;        
+    max-width: 350px;   
+    margin: 0 auto;     
+  }
+
+  .card h3 {
+    font-size: 20px;
+  }
+
+  .card .price {
+    font-size: 24px;
+  }
+
+  .pricing-btn {
+    font-size: 14px;
+    padding: 14px 20px;
+  }
+}

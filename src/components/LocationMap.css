@@ -1,0 +1,48 @@
+.location-section {
+  text-align: center;
+  background: #eef0fc;
+  padding: 50px 20px;
+}
+
+.location-title {
+  font-size: 38px;
+  font-weight: bold;
+  color: #9d7826;
+}
+
+.location-divider {
+  width: 70px;
+  border: 2px solid #9d7826;
+  margin: 10px auto 30px auto;
+}
+
+.map-container {
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.small-map iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2 / 1;
+  border: none;
+}
+
+
+@media screen and (max-width: 768px) {
+  .location-title {
+    font-size: 28px;
+  }
+
+  .map-container {
+    border-radius: 16px;
+    margin: 20px auto;
+  }
+
+  .small-map iframe {
+    aspect-ratio: 4 / 3; 
+  }
+}

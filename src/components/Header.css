@@ -1,0 +1,158 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 70px;
+  margin-right: 10px;
+}
+
+.project-name {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.name-top {
+  color: #A8852C;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.name-mid {
+  font-family: 'Brush Script MT', cursive;
+  font-size: 22px;
+  margin-top: -6px;
+}
+
+.name-bottom {
+  font-weight: 700;
+  font-size: 16px;
+  margin-top: -4px;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 25px;
+  font-weight: 500;
+  align-items: center;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #0a1744;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+  color: #A8852C;
+  border-bottom: 2px solid #A8852C;
+  padding-bottom: 2px;
+}
+
+.enquire-btn {
+  background-color: #A8852C;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.enquire-btn:hover {
+  background-color: #8a6e21;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 26px;
+  color: #0a1744;
+  cursor: pointer;
+}
+
+/* RESPONSIVE STYLES */
+@media screen and (max-width: 768px) {
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .enquire-btn {
+    margin-top: 10px;
+    width: 90%;
+    align-self: center;
+  }
+}
+
+/* Visibility helpers */
+.desktop-only {
+  display: block;
+}
+
+.mobile-only {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .desktop-only {
+    display: none;
+  }
+
+  .mobile-only {
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+  }
+}
+.nav-menu button {
+  background: none;
+  border: none;
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: color 0.3s ease;
+}
+
+.nav-menu button:hover {
+  color: #facc15; 
+}
+
